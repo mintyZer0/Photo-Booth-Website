@@ -40,5 +40,11 @@ init();
 // Draw Image
 var context = canvas.getContext('2d');
 snap.addEventListener("click", function(){
-    context.drawImage(video, 0, 0, 640, 480)
+    context.drawImage(video, 0, 0, 640, 480);
+    var dataURL = canvas.toDataURL('image/png');
+    var img = document.createElement('img');
+    img.src = dataURL
+    imagesList.push(img)
+    console.log(imagesList)
 });
+
