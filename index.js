@@ -10,7 +10,7 @@ const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const snap = document.getElementById('snap')
 const errorMsgElement = document.getElementById('spanErrorMsg');
-localStorage
+var imagesList = []
 
 const constraints = {
     video:{
@@ -31,11 +31,12 @@ async function init(){
 }
 
 function handleSuccess(stream){
-    //window.stream = stream;
+    window.stream = stream;
     video.srcObject = stream;
 }
 //Load init
 init();
+
 // Draw Image
 var context = canvas.getContext('2d');
 snap.addEventListener("click", function(){
