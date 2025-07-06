@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": null,
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "/home/minty/Projects/Photo-Booth-Website/example.crt",
+    "key": "/home/minty/Projects/Photo-Booth-Website/example.key",
+    "passphrase": "061006"
+  }
+}

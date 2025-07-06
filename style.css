@@ -5,12 +5,25 @@
     height: 400px;
 }
 
+.video-wrap video{
+    object-fit: cover;
+    width: auto;
+    max-width: 400px;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+}
+
 .controller {
     display: flex;
     justify-content: center;
 }
 
 #canvas {
+    display: none;
+}
+
+#canvas-HD {
     display: none;
 }
 
@@ -21,9 +34,7 @@
 }
 
 #photo-grid-style1 {
-
     display: grid;
-    
     grid-template-columns: repeat(2, 1fr);
     row-gap: 5px;
     gap: 5px
