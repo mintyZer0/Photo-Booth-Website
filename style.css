@@ -13,3 +13,30 @@
 #canvas {
     display: none;
 }
+
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#photo-grid-style1 {
+
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    gap: 5px
+}
+
+#timer-countdown {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 400px;
+    font-size: 72px;
+    color: white;
+    opacity: 50%;
+    z-index: 100;
+    position: absolute;
+}
